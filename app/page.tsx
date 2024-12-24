@@ -1,5 +1,7 @@
+import test from "./test.json"
+
 import Filter from "./components/filter";
-import Servers from "./components/servers";
+import Server from "./components/server";
 
 const Home = () => {
   return (
@@ -8,7 +10,14 @@ const Home = () => {
         Xash Monitor
       </h1>
       <Filter />
-      <Servers />
+      {
+        test.map((server) => {
+          return (
+            <>
+              <Server server={server}/>
+            </>
+          )
+        })}
     </div>
   );
 };

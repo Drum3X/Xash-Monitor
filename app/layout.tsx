@@ -17,7 +17,7 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={`${inter.className} text-header p-4 antialiased bg-background`}>{children}</body>
+      <body className={`${inter.className} text-header p-2 antialiased bg-background`}>{children}</body>
     </html>
   );
 };
